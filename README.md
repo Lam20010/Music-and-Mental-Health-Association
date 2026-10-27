@@ -3,7 +3,7 @@
 An interactive data science project exploring associations between music preferences, listening habits, and mental health
 indicators through exploratory data analysis, statistical insights, and visualizations.
 
-**Unit 3 Final Project — Data Exploration & Dashboard Development**
+**Data Exploration & Dashboard Development**
 Lama Mansour Aldhalaan
 
 This project explores how people listen to music (when, where, how many hours a day and which genres) and how that relates
@@ -69,8 +69,6 @@ missing values or duplicates.
   split evenly between *Improve* and *Worsen*; ADHD listens to the fastest music (median 140 BPM) and Anxiety the slowest (70 BPM).
 - **Outliers:** 87 ages above 40.5 and 2 tempos above about 155 BPM are flagged by the IQR rule; they are plausible answers and were kept.
 
-The full discussion, limitations and recommendations are in Step 7 of the notebook.
-
 ---
 
 ## How to run
@@ -96,12 +94,6 @@ python -m streamlit run app.py
 ```
 
 Then open the address it prints (usually http://localhost:8501). Turn your sound on: the dashboard plays music.
-
-### Presentation
-Open `presentation/music_listening_presentation.html` in a browser. Use ← / → to move between slides, **N** for speaker
-notes, **F** for full screen, and the play button in the bottom bar to start the presentation timer.
-
----
 
 ## Dashboard
 
@@ -137,7 +129,6 @@ A Streamlit app in a purple music-player style. Every chart and number responds 
 
 - The dataset is an extended version of the original survey; some added fields are derived or simulated, and
   `mental_disorder` is a group label, not a clinical diagnosis.
-- The reported effect is self-reported, and the analysis is descriptive: it shows associations, not cause and effect.
 - The sample is young (median age 21) and several groups have fewer than 30 records.
 
 ## References
