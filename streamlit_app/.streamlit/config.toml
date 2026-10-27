@@ -1,0 +1,13 @@
+[theme]
+base = "dark"
+primaryColor = "#b44fe0"
+backgroundColor = "#1d0a4a"
+secondaryBackgroundColor = "#2b1270"
+textColor = "#ffffff"
+font = "sans serif"
+
+[server]
+enableStaticServing = true          # serves static/loops/*.wav to the music player at app/static/...
+
+[browser]
+gatherUsageStats = false

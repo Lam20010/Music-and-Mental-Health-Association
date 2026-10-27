@@ -1,0 +1,16 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# files the notebook regenerates when it runs (the cleaned data the dashboard uses is in streamlit_app/)
+/plots/
+/music_eda_project_outputs/
+/clean_data.csv
+
+# editor / OS
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,572 @@
+[
+ {
+  "file": "univ_01_age_hist.jpg",
+  "cell": 41,
+  "section": "Univariate",
+  "group": "Univariate 01 — Age",
+  "title": "Univariate 01 — Age",
+  "what": "Feature: Age — histogram with KDE. This shows the shape and concentration of values.",
+  "observation": "Age ranges from 13 to 82 years; the median is 21 while the mean is 24.7, and skewness is +2.07.",
+  "interpretation": "The right-skew indicates most records are concentrated at younger ages, with a smaller older- age tail pulling the mean above the median; 468/1,000 records (46.8%) are ages 13–20."
+ },
+ {
+  "file": "univ_01_age_box.jpg",
+  "cell": 43,
+  "section": "Univariate",
+  "group": "Univariate 01 — Age",
+  "title": "Age — boxplot",
+  "what": "Feature: Age — boxplot. This highlights median, interquartile range, whiskers, and potential outliers.",
+  "observation": "The median age is 21 years; Q1=18 and Q3=27, so the middle 50% spans ages 18–27 (IQR=9 years).",
+  "interpretation": "The IQR rule flags 87 ages above the upper fence of 40.5; these are statistically unusual in this young-skewed sample, not automatically invalid ages."
+ },
+ {
+  "file": "univ_02_hours_per_day_hist.jpg",
+  "cell": 45,
+  "section": "Univariate",
+  "group": "Univariate 02 — Hours per day",
+  "title": "Univariate 02 — Hours per day",
+  "what": "Feature: Hours per day — histogram with KDE. This shows the shape and concentration of values.",
+  "observation": "Daily listening averages 5.18 hours (median=4.85); the middle 50% runs from 3.98 to 6.87 hours.",
+  "interpretation": "The distribution is approximately symmetric with slight left skew (−0.19), spanning 1.01–7.80 hours; many records cluster around roughly 4–7 hours."
+ },
+ {
+  "file": "univ_02_hours_per_day_box.jpg",
+  "cell": 47,
+  "section": "Univariate",
+  "group": "Univariate 02 — Hours per day",
+  "title": "Hours per day — boxplot",
+  "what": "Feature: Hours per day — boxplot. This highlights median, interquartile range, whiskers, and potential outliers.",
+  "observation": "The median is 4.85 hours/day, with Q1=3.98 and Q3=6.87 (IQR=2.90 hours).",
+  "interpretation": "No values fall outside the 1.5×IQR fences in this dataset; the observed range is 1.01–7.80 hours, so there are no IQR-flagged extreme durations."
+ },
+ {
+  "file": "univ_03_bpm_hist.jpg",
+  "cell": 49,
+  "section": "Univariate",
+  "group": "Univariate 03 — BPM",
+  "title": "Univariate 03 — BPM",
+  "what": "Feature: BPM — histogram with KDE. This shows the shape and concentration of values.",
+  "observation": "BPM averages 90.4 with a median of 86.2; the middle half falls between 72.5 and 105.6 BPM.",
+  "interpretation": "Positive skew (+0.57) means a tail of faster tempos pulls the mean above the median; the full observed range is 50.0–159.3 BPM."
+ },
+ {
+  "file": "univ_03_bpm_box.jpg",
+  "cell": 51,
+  "section": "Univariate",
+  "group": "Univariate 03 — BPM",
+  "title": "BPM — boxplot",
+  "what": "Feature: BPM — boxplot. This highlights median, interquartile range, whiskers, and potential outliers.",
+  "observation": "The median tempo is 86.2 BPM; Q1=72.5 and Q3=105.6 BPM (IQR=33.1 BPM).",
+  "interpretation": "Two BPM observations exceed the upper IQR fence (~155.3 BPM). They are unusually fast relative to the sample but still within the dataset’s observed maximum of 159.3 BPM."
+ },
+ {
+  "file": "univ_04_primary_streaming_service.jpg",
+  "cell": 53,
+  "section": "Univariate",
+  "group": "Univariate 04 — Primary streaming service",
+  "title": "Univariate 04 — Primary streaming service",
+  "what": "Feature: Primary streaming service — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "Spotify accounts for 612/1000 records (61.2%), far ahead of YouTube Music (137; 13.7%).",
+  "interpretation": "Pandora is rarest (18 records, 1.8%), showing a strongly concentrated service distribution. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_04_primary_streaming_service_bar.jpg",
+  "cell": 55,
+  "section": "Univariate",
+  "group": "Univariate 04 — Primary streaming service",
+  "title": "Primary streaming service — sorted count bar chart",
+  "what": "Feature: Primary streaming service — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "Spotify accounts for 612/1000 records (61.2%), far ahead of YouTube Music (137; 13.7%).",
+  "interpretation": "Pandora is rarest (18 records, 1.8%), showing a strongly concentrated service distribution. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_05_listening_time.jpg",
+  "cell": 57,
+  "section": "Univariate",
+  "group": "Univariate 05 — Listening time",
+  "title": "Univariate 05 — Listening time",
+  "what": "Feature: Listening time — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "Late night is the dominant category (501 records, 50.1%); Evening is second (339 records, 33.9%).",
+  "interpretation": "Afternoon is least common (58 records, 5.8%), so listening times are not evenly distributed. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_05_listening_time_bar.jpg",
+  "cell": 59,
+  "section": "Univariate",
+  "group": "Univariate 05 — Listening time",
+  "title": "Listening time — sorted count bar chart",
+  "what": "Feature: Listening time — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "Late night is the dominant category (501 records, 50.1%); Evening is second (339 records, 33.9%).",
+  "interpretation": "Afternoon is least common (58 records, 5.8%), so listening times are not evenly distributed. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_06_listening_setting.jpg",
+  "cell": 61,
+  "section": "Univariate",
+  "group": "Univariate 06 — Listening setting",
+  "title": "Univariate 06 — Listening setting",
+  "what": "Feature: Listening setting — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "Home / relaxing leads (418 records, 41.8%), followed by Public / Private Transport (213 records, 21.3%).",
+  "interpretation": "While gaming is the least common setting (14 records, 1.4); Social / with friends accounts for 80 records (8.0%). Read bar height as the number of records."
+ },
+ {
+  "file": "univ_06_listening_setting_bar.jpg",
+  "cell": 63,
+  "section": "Univariate",
+  "group": "Univariate 06 — Listening setting",
+  "title": "Listening setting — sorted count bar chart",
+  "what": "Feature: Listening setting — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "Home / relaxing leads (418 records, 41.8%), followed by Public / Private Transport (213 records, 21.3%).",
+  "interpretation": "While gaming is the least common setting (14 records, 1.4); Social / with friends accounts for 80 records (8.0%). The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_07_instrumentalist.jpg",
+  "cell": 65,
+  "section": "Univariate",
+  "group": "Univariate 07 — Instrumentalist",
+  "title": "Univariate 07 — Instrumentalist",
+  "what": "Feature: Instrumentalist — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "No is reported by 667 respondents (66.7%), compared with 333 (33.3%) who selected Yes.",
+  "interpretation": "The groups are not equal in size (about two-thirds No and one-third Yes), which matters when interpreting comparisons with other variables. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_07_instrumentalist_bar.jpg",
+  "cell": 67,
+  "section": "Univariate",
+  "group": "Univariate 07 — Instrumentalist",
+  "title": "Instrumentalist — sorted count bar chart",
+  "what": "Feature: Instrumentalist — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "No is reported by 667 respondents (66.7%), compared with 333 (33.3%) who selected Yes.",
+  "interpretation": "The groups are not equal in size (about two-thirds No and one-third Yes), which matters when interpreting comparisons with other variables. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_08_composer.jpg",
+  "cell": 69,
+  "section": "Univariate",
+  "group": "Univariate 08 — Composer",
+  "title": "Univariate 08 — Composer",
+  "what": "Feature: Composer — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "No dominates with 862 records (86.2); only 138 respondents (13.8%) report composing music.",
+  "interpretation": "The Composer=Yes group is comparatively small, so relationship plots involving composers should be interpreted with group size in mind. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_08_composer_bar.jpg",
+  "cell": 71,
+  "section": "Univariate",
+  "group": "Univariate 08 — Composer",
+  "title": "Composer — sorted count bar chart",
+  "what": "Feature: Composer — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "No dominates with 862 records (86.2); only 138 respondents (13.8%) report composing music.",
+  "interpretation": "The Composer=Yes group is comparatively small, so relationship plots involving composers should be interpreted with group size in mind. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_09_exploratory.jpg",
+  "cell": 73,
+  "section": "Univariate",
+  "group": "Univariate 09 — Exploratory",
+  "title": "Univariate 09 — Exploratory",
+  "what": "Feature: Exploratory — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "Exploratory=Yes is common (755 records, 75.5), while No represents 245 records (24.5%).",
+  "interpretation": "The substantial imbalance means raw counts in cross-tabulations can be driven partly by the larger Yes group. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_09_exploratory_bar.jpg",
+  "cell": 75,
+  "section": "Univariate",
+  "group": "Univariate 09 — Exploratory",
+  "title": "Exploratory — sorted count bar chart",
+  "what": "Feature: Exploratory — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "Exploratory=Yes is common (755 records, 75.5), while No represents 245 records (24.5%).",
+  "interpretation": "The substantial imbalance means raw counts in cross-tabulations can be driven partly by the larger Yes group. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_10_foreign_languages.jpg",
+  "cell": 77,
+  "section": "Univariate",
+  "group": "Univariate 10 — Foreign languages",
+  "title": "Univariate 10 — Foreign languages",
+  "what": "Feature: Foreign languages — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "Foreign languages=Yes appears in 735 records (73.5%), versus 265 No records (26.5%).",
+  "interpretation": "Read bar height as the number of records."
+ },
+ {
+  "file": "univ_10_foreign_languages_bar.jpg",
+  "cell": 79,
+  "section": "Univariate",
+  "group": "Univariate 10 — Foreign languages",
+  "title": "Foreign languages — sorted count bar chart",
+  "what": "Feature: Foreign languages — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "Foreign languages=Yes appears in 735 records (73.5%), versus 265 No records (26.5%).",
+  "interpretation": "The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_11_music_effects.jpg",
+  "cell": 81,
+  "section": "Univariate",
+  "group": "Univariate 11 — Music effects",
+  "title": "Univariate 11 — Music effects",
+  "what": "Feature: Music effects — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "Improve is the majority response (720 records, 72.0%); No effect has 170, and Worsen has 110.",
+  "interpretation": "The target is imbalanced toward Improve, so later comparisons should report within-group percentages as well as raw counts. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_11_music_effects_bar.jpg",
+  "cell": 83,
+  "section": "Univariate",
+  "group": "Univariate 11 — Music effects",
+  "title": "Music effects — sorted count bar chart",
+  "what": "Feature: Music effects — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "Improve is the majority response (720 records, 72.0%); No effect has 170, and Worsen has 110.",
+  "interpretation": "The target is imbalanced toward Improve, so later comparisons should report within-group percentages as well as raw counts. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_12_mental_disorder.jpg",
+  "cell": 85,
+  "section": "Univariate",
+  "group": "Univariate 12 — Mental disorder",
+  "title": "Univariate 12 — Mental disorder",
+  "what": "Feature: Mental disorder — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "Anxiety is the largest label group (360 records, 36.0%), followed by No reported condition (280, 28.0%).",
+  "interpretation": "Schizophrenia has only 10 records (1.0%), so its apparent patterns are highly uncertain; read them as descriptive patterns, not clinical evidence. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_12_mental_disorder_bar.jpg",
+  "cell": 87,
+  "section": "Univariate",
+  "group": "Univariate 12 — Mental disorder",
+  "title": "Mental disorder — sorted count bar chart",
+  "what": "Feature: Mental disorder — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "Anxiety is the largest label group (360 records, 36.0%), followed by No reported condition (280, 28.0%).",
+  "interpretation": "Schizophrenia has only 10 records (1.0%), so its apparent patterns are highly uncertain; read them as descriptive patterns, not clinical evidence. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_13_music_genre.jpg",
+  "cell": 89,
+  "section": "Univariate",
+  "group": "Univariate 13 — Music genre",
+  "title": "Univariate 13 — Music genre",
+  "what": "Feature: Music genre — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "The three most common genres are Ambient 159 (15.9%), Classical 151 (15.1%), Lofi 146 (14.6%), together 456 records (45.6%).",
+  "interpretation": "Least-common categories include Soundtracks, Country, R&B (16 records each). Many genres have small groups, so compare within-genre proportions carefully. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_13_music_genre_bar.jpg",
+  "cell": 91,
+  "section": "Univariate",
+  "group": "Univariate 13 — Music genre",
+  "title": "Music genre — sorted count bar chart",
+  "what": "Feature: Music genre — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "The ranked bar confirms that the three most common genres are Ambient 159 (15.9%), Classical 151 (15.1%), Lofi 146 (14.6%), together 456 records (45.6%).",
+  "interpretation": "Least-common categories include Soundtracks, Country, R&B (16 records each). Many genres have small groups, so compare within-genre proportions carefully. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_14_vibe_reason.jpg",
+  "cell": 93,
+  "section": "Univariate",
+  "group": "Univariate 14 — Vibe reason",
+  "title": "Univariate 14 — Vibe reason",
+  "what": "Feature: Vibe reason — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "The leading reasons are Calming/relaxation 412 (41.2%), Emotional connection/mood expression 168 (16.8%), Rhythm and stimulation 144 (14.4%); Calming/relaxation alone accounts for 412 records (41.2%).",
+  "interpretation": "Enjoyment of sound/rhythm is least common (41 records, 4.1%). This is a concentration in the current dataset, not necessarily in all music listeners. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_14_vibe_reason_bar.jpg",
+  "cell": 95,
+  "section": "Univariate",
+  "group": "Univariate 14 — Vibe reason",
+  "title": "Vibe reason — sorted count bar chart",
+  "what": "Feature: Vibe reason — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "The leading reasons are Calming/relaxation 412 (41.2%), Emotional connection/mood expression 168 (16.8%), Rhythm and stimulation 144 (14.4%); Calming/relaxation alone accounts for 412 records (41.2%).",
+  "interpretation": "Enjoyment of sound/rhythm is least common (41 records, 4.1%). This is a concentration in the current dataset, not necessarily in all music listeners. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "univ_15_repeats_songs_often.jpg",
+  "cell": 97,
+  "section": "Univariate",
+  "group": "Univariate 15 — Repeats songs often",
+  "title": "Univariate 15 — Repeats songs often",
+  "what": "Feature: Repeats songs often — countplot. It shows the number of records in each category; the most frequent category is printed below the chart.",
+  "observation": "Responses are fairly balanced: Yes=523 (52.3%) and No=477 (47.7%).",
+  "interpretation": "Because neither category overwhelms the other, later comparisons of repetition are less dominated by a single overall class. Read bar height as the number of records."
+ },
+ {
+  "file": "univ_15_repeats_songs_often_bar.jpg",
+  "cell": 99,
+  "section": "Univariate",
+  "group": "Univariate 15 — Repeats songs often",
+  "title": "Repeats songs often — sorted count bar chart",
+  "what": "Feature: Repeats songs often — sorted raw-count bar chart. It ranks the categories by record count without converting counts to shares.",
+  "observation": "Responses are fairly balanced: Yes=523 (52.3%) and No=477 (47.7%).",
+  "interpretation": "Because neither category overwhelms the other, later comparisons of repetition are less dominated by a single overall class. The axis shows raw counts, not percentages."
+ },
+ {
+  "file": "bivar_age_vs_hours_per_day.jpg",
+  "cell": 107,
+  "section": "Bivariate",
+  "group": "Relationship 01 — Age vs. hours per day",
+  "title": "Bivar Age Vs Hours Per Day",
+  "what": "Relationship: Age vs. hours per day — scatterplot with regression trend. Examine direction, strength, spread, and possible outliers.",
+  "observation": "Age and listening hours show a strong negative Pearson correlation (r=-0.743; n=1000): older records generally sit lower on the hours axis.",
+  "interpretation": "Respondents aged 13–20 average 6.83 hours/day (median 6.92), compared with mean 2.26 hours for ages 40–49 and 2.25 for ages 50–70. This is a descriptive pattern, not a causal effect."
+ },
+ {
+  "file": "bivar_age_vs_hours_per_day_correlation_heatmap.jpg",
+  "cell": 109,
+  "section": "Bivariate",
+  "group": "Relationship 01 — Age vs. hours per day",
+  "title": "Bivar Age Vs Hours Per Day Correlation Heatmap",
+  "what": "Relationship: Age vs. hours per day — pairwise correlation heatmap. The annotated value quantifies the linear relationship.",
+  "observation": "The age–hours cell is the strongest numeric association (r=-0.743); age–BPM is only r=0.032, and hours–BPM is r=-0.001.",
+  "interpretation": "The heatmap therefore highlights an age/listening-duration relationship, while BPM has almost no linear correlation with either variable in this dataset."
+ },
+ {
+  "file": "bivar_age_vs_listening_time.jpg",
+  "cell": 112,
+  "section": "Bivariate",
+  "group": "Relationship 02 — Age vs. listening time",
+  "title": "Bivar Age Vs Listening Time",
+  "what": "Relationship: Age by listening time — categorical–numeric boxplot. Compare age medians and ranges across time-of-day groups.",
+  "observation": "Median ages differ by time: Late night=20 (n=501), Evening=21 (n=339), Morning=25, Afternoon=26.",
+  "interpretation": "Late-night listening is both the largest group (501 records) and younger by median age than afternoon listening (median 26). This pattern is descriptive, not causal."
+ },
+ {
+  "file": "bivar_age_vs_listening_setting.jpg",
+  "cell": 115,
+  "section": "Bivariate",
+  "group": "Relationship 03 — Age vs. listening setting",
+  "title": "Bivar Age Vs Listening Setting",
+  "what": "Relationship: Age by listening setting — categorical–numeric boxplot. Compare the median age, spread, and outliers for each setting.",
+  "observation": "Median age is lowest for Public / Private Transport (18; n=213) and Home / relaxing (19; n=418).",
+  "interpretation": "Other has the highest median age (28.5) but only 38 records, so its estimate is less stable."
+ },
+ {
+  "file": "bivar_instrumentalist_vs_foreign_languages.jpg",
+  "cell": 118,
+  "section": "Bivariate",
+  "group": "Relationship 04 — Instrumentalist vs. foreign languages",
+  "title": "Bivar Instrumentalist Vs Foreign Languages",
+  "what": "Relationship: Instrumentalist vs. foreign languages — grouped count bar chart. Compare raw counts across Yes/No groups.",
+  "observation": "Among instrumentalists, 324/333 (97.3%) are marked Foreign languages=Yes; among non- instrumentalists, 411/667 (61.6%) are Yes.",
+  "interpretation": "The Yes-rate gap is 35.7 percentage points. This is an association, not evidence that playing instruments predicts language ability."
+ },
+ {
+  "file": "bivar_instrumentalist_vs_foreign_languages_heatmap.jpg",
+  "cell": 120,
+  "section": "Bivariate",
+  "group": "Relationship 04 — Instrumentalist vs. foreign languages",
+  "title": "Bivar Instrumentalist Vs Foreign Languages Heatmap",
+  "what": "Relationship: Instrumentalist vs. foreign languages — count heatmap. Darker cells represent more records in that category combination.",
+  "observation": "Among instrumentalists, 324/333 (97.3%) are marked Foreign languages=Yes; among non- instrumentalists, 411/667 (61.6%) are Yes.",
+  "interpretation": "The Yes-rate gap is 35.7 percentage points. This is an association, not evidence that playing instruments predicts language ability."
+ },
+ {
+  "file": "bivar_exploratory_vs_foreign_languages.jpg",
+  "cell": 123,
+  "section": "Bivariate",
+  "group": "Relationship 05 — Exploratory vs. foreign languages",
+  "title": "Bivar Exploratory Vs Foreign Languages",
+  "what": "Relationship: Exploratory vs. foreign languages — grouped count bar chart. Compare category counts across exploratory status.",
+  "observation": "Exploratory=Yes has 659/755 Foreign languages=Yes (87.3%), while Exploratory=No has 76/245 (31.0%).",
+  "interpretation": "The 56.3 percentage-point gap is prominent in both the grouped bars and heatmap. This is an association, not evidence of cause."
+ },
+ {
+  "file": "bivar_exploratory_vs_foreign_languages_heatmap.jpg",
+  "cell": 125,
+  "section": "Bivariate",
+  "group": "Relationship 05 — Exploratory vs. foreign languages",
+  "title": "Bivar Exploratory Vs Foreign Languages Heatmap",
+  "what": "Relationship: Exploratory vs. foreign languages — count heatmap. The cell values show the number of records for each combination.",
+  "observation": "Exploratory=Yes has 659/755 Foreign languages=Yes (87.3%), while Exploratory=No has 76/245 (31.0%).",
+  "interpretation": "The 56.3 percentage-point gap is prominent in both the grouped bars and heatmap. This is an association, not evidence of cause."
+ },
+ {
+  "file": "bivar_composer_vs_listening_setting.jpg",
+  "cell": 128,
+  "section": "Bivariate",
+  "group": "Relationship 06 — Composer vs. listening setting",
+  "title": "Bivar Composer Vs Listening Setting",
+  "what": "Relationship: Composer vs. listening setting — grouped count bar chart. This view helps compare reported settings by composer status.",
+  "observation": "Among composers, 83/138 (60.1%) report Home / relaxing and 55/138 (39.9%) Public / Private Transport; no composers fall in the other six settings.",
+  "interpretation": "Non-composers are more distributed: 38.9% Home / relaxing and 18.3% transport, with records also in work/study, gym and social settings."
+ },
+ {
+  "file": "bivar_composer_vs_listening_setting_heatmap.jpg",
+  "cell": 130,
+  "section": "Bivariate",
+  "group": "Relationship 06 — Composer vs. listening setting",
+  "title": "Bivar Composer Vs Listening Setting Heatmap",
+  "what": "Relationship: Composer vs. listening setting — count heatmap. All observed setting/status combinations are shown.",
+  "observation": "Among composers, 83/138 (60.1%) report Home / relaxing and 55/138 (39.9%) Public / Private Transport; no composers fall in the other six settings.",
+  "interpretation": "Non-composers are more distributed: 38.9% Home / relaxing and 18.3% transport, with records also in work/study, gym and social settings."
+ },
+ {
+  "file": "bivar_instrumentalist_vs_hours_per_day.jpg",
+  "cell": 133,
+  "section": "Bivariate",
+  "group": "Relationship 07 — Instrumentalist vs. hours per day",
+  "title": "Bivar Instrumentalist Vs Hours Per Day",
+  "what": "Relationship: Instrumentalist vs. hours per day — categorical–numeric boxplot. Compare median listening duration and spread for Yes and No.",
+  "observation": "Instrumentalists average 5.68 listening hours/day (median 4.93; n=333), versus 4.94 hours/day (median 4.75; n=667) for non-instrumentalists.",
+  "interpretation": "The mean differs by 0.74 hours, but medians differ by only 0.18 hours and the observed ranges overlap broadly. The plot suggests a modest descriptive difference, not proof that being an instrumentalist causes longer listening."
+ },
+ {
+  "file": "bivar_composer_vs_listening_time.jpg",
+  "cell": 136,
+  "section": "Bivariate",
+  "group": "Relationship 08 — Composer vs. listening time",
+  "title": "Bivar Composer Vs Listening Time",
+  "what": "Relationship: Composer vs. listening time — grouped count bar chart. Compare observed listening-time counts across composer status.",
+  "observation": "Late night is reported by 110/138 composers (79.7%), compared with 391/862 non-composers (45.4%).",
+  "interpretation": "Composers show a 34.3 percentage-point higher late-night share; Evening is the next large non- composer group (38.2%)."
+ },
+ {
+  "file": "bivar_composer_vs_listening_time_heatmap.jpg",
+  "cell": 138,
+  "section": "Bivariate",
+  "group": "Relationship 08 — Composer vs. listening time",
+  "title": "Bivar Composer Vs Listening Time Heatmap",
+  "what": "Relationship: Composer vs. listening time — count heatmap. The cells show raw counts for all combinations.",
+  "observation": "Late night is reported by 110/138 composers (79.7%), compared with 391/862 non-composers (45.4%).",
+  "interpretation": "Composers show a 34.3 percentage-point higher late-night share; Evening is the next large non- composer group (38.2%)."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_music_genre.jpg",
+  "cell": 141,
+  "section": "Bivariate",
+  "group": "Relationship 09 — Mental disorder vs. music genre",
+  "title": "Bivar Mental Disorder Vs Music Genre",
+  "what": "Relationship: Mental disorder vs. music genre — grouped count bar chart. Compare raw counts; high-cardinality genres may be limited in this view for readability.",
+  "observation": "Anxiety has the largest row (n=360), split evenly across Ambient, Classical and Lofi (120 each; 33.3% each). ADHD is split between EDM and Hip-hop (34 each; 48.6% each).",
+  "interpretation": "Autism (ASD) is distributed across Electronic (26; 40.0%), Instrumental (20; 30.8%) and Video game music (19; 29.2%); No reported condition is close to balanced across genres. Disorder group sizes differ sharply."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_music_genre_heatmap.jpg",
+  "cell": 143,
+  "section": "Bivariate",
+  "group": "Relationship 09 — Mental disorder vs. music genre",
+  "title": "Bivar Mental Disorder Vs Music Genre Heatmap",
+  "what": "Relationship: Mental disorder vs. music genre — count heatmap. All observed genre/label combinations remain visible.",
+  "observation": "Anxiety has the largest row (n=360), split evenly across Ambient, Classical and Lofi (120 each; 33.3% each). ADHD is split between EDM and Hip-hop (34 each; 48.6% each).",
+  "interpretation": "Autism (ASD) is distributed across Electronic (26; 40.0%), Instrumental (20; 30.8%) and Video game music (19; 29.2%); No reported condition is close to balanced across genres. Disorder group sizes differ sharply."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_vibe_reason.jpg",
+  "cell": 146,
+  "section": "Bivariate",
+  "group": "Relationship 10 — Mental disorder vs. vibe reason",
+  "title": "Bivar Mental Disorder Vs Vibe Reason",
+  "what": "Relationship: Mental disorder vs. vibe reason — grouped count bar chart. Compare the count of each reason across labels.",
+  "observation": "The designed mapping is visible: all Anxiety records (360/360) choose Calming/relaxation, all Depression records (90/90) choose Emotional connection/mood expression, and all ADHD records (70/70) choose Rhythm and stimulation.",
+  "interpretation": "Autism (ASD) is almost evenly split between Familiarity/comfort (33; 50.8%) and Repetitive/predictable beats (32; 49.2%). This is a descriptive pattern, not a clinical finding."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_vibe_reason_heatmap.jpg",
+  "cell": 148,
+  "section": "Bivariate",
+  "group": "Relationship 10 — Mental disorder vs. vibe reason",
+  "title": "Bivar Mental Disorder Vs Vibe Reason Heatmap",
+  "what": "Relationship: Mental disorder vs. vibe reason — count heatmap. The heatmap displays every label/reason pair.",
+  "observation": "The designed mapping is visible: all Anxiety records (360/360) choose Calming/relaxation, all Depression records (90/90) choose Emotional connection/mood expression, and all ADHD records (70/70) choose Rhythm and stimulation.",
+  "interpretation": "Autism (ASD) is almost evenly split between Familiarity/comfort (33; 50.8%) and Repetitive/predictable beats (32; 49.2%). This is a descriptive pattern, not a clinical finding."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_repeats_songs.jpg",
+  "cell": 151,
+  "section": "Bivariate",
+  "group": "Relationship 11 — Mental disorder vs. repeats songs often",
+  "title": "Bivar Mental Disorder Vs Repeats Songs",
+  "what": "Relationship: Mental disorder vs. repeats songs often — grouped count bar chart. Compare the recorded Yes/No counts by label.",
+  "observation": "Repeat-song Yes rates are ADHD 90.0% (63/70), Autism (ASD) 90.8% (59/65), and OCD 92.0% (23/25), versus 45.0% (126/280) for No reported condition.",
+  "interpretation": "The contrast is strong, but several group sizes are small (Schizophrenia n=10, Social anxiety n=20, OCD n=25). Treat it as descriptive, not as evidence of a diagnostic pattern."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_repeats_songs_heatmap.jpg",
+  "cell": 153,
+  "section": "Bivariate",
+  "group": "Relationship 11 — Mental disorder vs. repeats songs often",
+  "title": "Bivar Mental Disorder Vs Repeats Songs Heatmap",
+  "what": "Relationship: Mental disorder vs. repeats songs often — count heatmap. Counts for each label and repeat-response combination are shown.",
+  "observation": "Repeat-song Yes rates are ADHD 90.0% (63/70), Autism (ASD) 90.8% (59/65), and OCD 92.0% (23/25), versus 45.0% (126/280) for No reported condition.",
+  "interpretation": "The contrast is strong, but several group sizes are small (Schizophrenia n=10, Social anxiety n=20, OCD n=25). Treat it as descriptive, not as evidence of a diagnostic pattern."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_bpm.jpg",
+  "cell": 156,
+  "section": "Bivariate",
+  "group": "Relationship 12 — Mental disorder vs. BPM",
+  "title": "Bivar Mental Disorder Vs Bpm",
+  "what": "Relationship: Mental disorder vs. BPM — categorical–numeric boxplot. Compare BPM medians, ranges, and outliers by label.",
+  "observation": "ADHD has the highest median BPM (139.8; n=70), while Anxiety has the lowest (70.1; n=360). Depression median is 79.3 BPM.",
+  "interpretation": "The condition groups show distinct tempo ranges in this dataset (e.g., ADHD 120.2–159.3 BPM; Anxiety 50.0–89.8 BPM). This is a descriptive pattern, not a clinical finding."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_listening_time.jpg",
+  "cell": 159,
+  "section": "Bivariate",
+  "group": "Relationship 13 — Mental disorder vs. listening time",
+  "title": "Bivar Mental Disorder Vs Listening Time",
+  "what": "Relationship: Mental disorder vs. listening time — grouped count bar chart. Compare the raw number of each listening-time category.",
+  "observation": "Depression has 70/90 late-night records (77.8%); Anxiety has 191/360 late night (53.1%) and 163/360 evening (45.3%). PTSD is split 19 late night (54.3%) and 16 evening (45.7%).",
+  "interpretation": "ADHD is more evenly divided between Evening (30; 42.9%) and Morning (29; 41.4%). Raw counts are affected by Anxiety being the largest label group (n=360)."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_listening_time_heatmap.jpg",
+  "cell": 161,
+  "section": "Bivariate",
+  "group": "Relationship 13 — Mental disorder vs. listening time",
+  "title": "Bivar Mental Disorder Vs Listening Time Heatmap",
+  "what": "Relationship: Mental disorder vs. listening time — count heatmap. The heatmap includes all observed time/label combinations.",
+  "observation": "Depression has 70/90 late-night records (77.8%); Anxiety has 191/360 late night (53.1%) and 163/360 evening (45.3%). PTSD is split 19 late night (54.3%) and 16 evening (45.7%).",
+  "interpretation": "ADHD is more evenly divided between Evening (30; 42.9%) and Morning (29; 41.4%). Raw counts are affected by Anxiety being the largest label group (n=360)."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_music_effects.jpg",
+  "cell": 164,
+  "section": "Bivariate",
+  "group": "Relationship 14 — Mental disorder vs. music effects",
+  "title": "Bivar Mental Disorder Vs Music Effects",
+  "what": "Relationship: Mental disorder vs. music effects — grouped count bar chart. Compare the observed effect counts across labels.",
+  "observation": "Improve is common for Anxiety (306/360; 85.0%), Autism (ASD) (59/65; 90.8%), ADHD (58/70; 82.9%) and Social anxiety (17/20; 85.0%). Depression is exactly split between Improve and Worsen (45 each; 50.0%).",
+  "interpretation": "Bipolar disorder has No effect as its largest category (25/45; 55.6%), and PTSD is 29/35 Improve (82.9%), so the pattern is not the same in every subgroup."
+ },
+ {
+  "file": "bivar_mental_disorder_vs_music_effects_heatmap.jpg",
+  "cell": 166,
+  "section": "Bivariate",
+  "group": "Relationship 14 — Mental disorder vs. music effects",
+  "title": "Bivar Mental Disorder Vs Music Effects Heatmap",
+  "what": "Relationship: Mental disorder vs. music effects — count heatmap. All label/effect combinations are included.",
+  "observation": "Improve is common for Anxiety (306/360; 85.0%), Autism (ASD) (59/65; 90.8%), ADHD (58/70; 82.9%) and Social anxiety (17/20; 85.0%). Depression is exactly split between Improve and Worsen (45 each; 50.0%).",
+  "interpretation": "Bipolar disorder has No effect as its largest category (25/45; 55.6%), and PTSD is 29/35 Improve (82.9%), so the pattern is not the same in every subgroup."
+ },
+ {
+  "file": "bivar_music_effect_vs_music_genre.jpg",
+  "cell": 169,
+  "section": "Bivariate",
+  "group": "Relationship 15 — Music effects vs. music genre",
+  "title": "Bivar Music Effect Vs Music Genre",
+  "what": "Relationship: Music effects vs. music genre — grouped count bar chart. Compare the counts of Improve, No effect, and Worsen across genres.",
+  "observation": "Improve dominates Ambient (135/159; 84.9%), Classical (128/151; 84.8%), and Lofi (124/146; 84.9%). Rock is mainly No effect (44/58; 75.9%), as is Metal (13/17; 76.5%).",
+  "interpretation": "Worsen is most common in Blues (31/44; 70.5%) and Indie (31/45; 68.9%). Some genre groups are small (e.g., Metal n=17)."
+ },
+ {
+  "file": "bivar_music_effect_vs_music_genre_heatmap.jpg",
+  "cell": 171,
+  "section": "Bivariate",
+  "group": "Relationship 15 — Music effects vs. music genre",
+  "title": "Bivar Music Effect Vs Music Genre Heatmap",
+  "what": "Relationship: Music effects vs. music genre — count heatmap. Every observed genre/effect combination is shown as a raw count.",
+  "observation": "Improve dominates Ambient (135/159; 84.9%), Classical (128/151; 84.8%), and Lofi (124/146; 84.9%). Rock is mainly No effect (44/58; 75.9%), as is Metal (13/17; 76.5%).",
+  "interpretation": "Worsen is most common in Blues (31/44; 70.5%) and Indie (31/45; 68.9%). Some genre groups are small (e.g., Metal n=17)."
+ },
+ {
+  "file": "bivar_numeric_correlation_heatmap.jpg",
+  "cell": 173,
+  "section": "Bivariate",
+  "group": "Overall numeric correlation matrix",
+  "title": "Overall numeric correlation matrix",
+  "what": "Overall numeric correlation: heatmap for age, hours per day, and BPM. Review the coefficients and identify the strongest absolute off-diagonal association.",
+  "observation": "Among the numeric variables, Age vs Hours per day has r=-0.743; Age vs BPM has r=0.032; Hours per day vs BPM has r=-0.001.",
+  "interpretation": "Age and listening hours have a strong negative linear association; the other two pairs are close to zero."
+ }
+]
